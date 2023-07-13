@@ -1,28 +1,30 @@
 {
   "editor.tabSize": 2,
+  "prettier.singleQuote": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.singleQuote": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.format": true
   },
-  "[html]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
-  },
-  "[css]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
-  },
   "[javascript]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.tabSize": 2,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true
   }
