@@ -105,3 +105,11 @@ $ hygen page new
 or
 $ hygen page new --title MyPage
 ```
+
+## Additional notes
+
+- Use [utility classes](https://getbootstrap.com/docs/5.3/utilities/background/) reduce writing CSS
+- [Spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/)
+- all image tags must include a className of `img-fluid`
+  - `<img className="img-fluid" />`
+  - [Image Bootstrap Reference](https://getbootstrap.com/docs/5.3/content/images/#responsive-images)
