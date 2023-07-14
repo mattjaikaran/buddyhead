@@ -23,7 +23,7 @@ TODO:
   - Creating forms/components/pages via CLI commands
 - Middleware
 - Setup [Strapi CMS](https://strapi.io)
-  - Link to CMS repo - [CMS]()
+  - Link to CMS repo - [CMS](https://github.com/mattjaikaran/buddyhead/tree/main/server)
 - Connect front end to CMS
 - Create pages
   - Home, About, Contact, Blog, Blog Detail, etc
