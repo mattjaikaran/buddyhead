@@ -1,4 +1,4 @@
-# Buddyhead front end
+# Buddyhead Web App
 
 ## Technologies
 
@@ -11,23 +11,25 @@
 - Redux Toolkit 1.9.5
 - Redux/RTK Query
 - React Hook Form 7.45.1
-- [Hygen](https://hygen.io/) CLI
 - Using Server and Client Components
 - Preloaded data client side via Redux
+
+#### Dev Tools
+
+- [Hygen](https://hygen.io/) CLI
 - Prettier
 - ESLint
 
 TODO:
 
 - [Hygen](https://hygen.io/) integration
-  - Creating forms/components/pages via CLI commands
+  - Creating pages via CLI commands
 - Middleware
 - Setup [Strapi CMS](https://strapi.io)
   - Link to CMS repo - [CMS](https://github.com/mattjaikaran/buddyhead/tree/main/server)
 - Connect front end to CMS
 - Create pages
   - Home, About, Contact, Blog, Blog Detail, etc
-- Create components
 - Set up [data fetching](https://nextjs.org/docs/app/building-your-application/data-fetching) for SSR/CSR/ISR
 
 ## Getting Started
