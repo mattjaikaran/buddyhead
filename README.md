@@ -34,7 +34,14 @@ TODO:
 
 ## Getting Started
 
-First, run the development server:
+If you don't have the
+
+```bash
+$ npm i -g yarn # using yarn on this project
+$ npm i -g hygen # install hygen globally to scaffold components
+```
+
+Run the development server:
 
 ```bash
 # using Node 18.13.0
@@ -49,12 +56,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## CLI
 
 Using [Hygen](https://www.hygen.io/docs/quick-start) to scaffold pages, components, forms. All generators are located in `_templates` directory.
-
-Install Hygen globally
-
-```bash
-$ npm i -g hygen
-```
 
 ### Components
 
