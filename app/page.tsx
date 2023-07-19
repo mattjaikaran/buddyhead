@@ -15,7 +15,7 @@ export default async function Home() {
   store.dispatch(setStartupUsers(data));
   return (
     <main>
-      <Container>
+      <Container fluid>
         <h1>what up</h1>
         <img className="img-fluid" src={sunset.src} alt="whatup" />
         <Preloader users={data} />
