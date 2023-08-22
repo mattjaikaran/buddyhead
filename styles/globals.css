@@ -50,7 +50,8 @@
 }
 
 .container {
-  padding: 0 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pink {
@@ -71,4 +72,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+p {
+  margin-bottom: 1rem;
 }

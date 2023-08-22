@@ -8,6 +8,7 @@ import sunset from '@/assets/images/sunset.jpg';
 import palms from '@/assets/images/palms.jpg';
 import { HeadingH1, HeadingH3, Paragraph } from '@/components/typography';
 import { Input } from '@/components/ui/input';
+import Newsletter from '@/components/newsletter';
 
 const Home: NextPage = () => {
   return (
@@ -26,14 +27,24 @@ const Home: NextPage = () => {
         </div>
         {/* <img src={palms.src} alt="img" /> */}
 
+        <div className="p-32 md:px-64 md:py-32 text-center">
+          <HeadingH3>Title</HeadingH3>
+          <Paragraph>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. It has survived not only five centuries, but also the leap
+            into electronic typesetting, remaining essentially unchanged.
+          </Paragraph>
+          <Button variant="outline">Button</Button>
+        </div>
+
         <div className="pink-bg p-24 text-center">
           <HeadingH3>what up</HeadingH3>
           <Button className="bg-foreground text-background">Click Here</Button>
         </div>
 
-        <div className="p-32 md:px-64 md:py-32 text-center">
-          <HeadingH3>Title</HeadingH3>
-          <Paragraph>
+        <div className="p-32 md:px-64 md:py-32 bg-foreground text-center">
+          <HeadingH3 className="text-background">Title</HeadingH3>
+          <Paragraph className="text-background">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. It has survived not only five centuries, but also the leap
             into electronic typesetting, remaining essentially unchanged.
@@ -54,19 +65,7 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        {/* newsletter */}
-        <div className="p-16 md:px-64 md:py-32 text-center">
-          <HeadingH3>Newsletter</HeadingH3>
-          <Paragraph>Sign up for updates</Paragraph>
-          <div className="px-0 lg:px-32 xl:px-32">
-            <Input
-              className="mb-4"
-              type="email"
-              placeholder="test@example.com"
-            />
-          </div>
-          <Button variant="outline">Button</Button>
-        </div>
+        <Newsletter />
       </div>
     </MainLayout>
   );

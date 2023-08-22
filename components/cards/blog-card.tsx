@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from 'next/router';
-import { ChevronDownIcon, CircleIcon, PlusIcon, StarIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { CircleIcon } from 'lucide-react';
 import {
   Card,
   CardContent,
@@ -8,33 +8,29 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { Separator } from '@/components/ui/separator';
 
 interface BlogCardProps {
+  id?: string;
   title: string;
-  slug: string;
+  img?: any;
+  slug?: string;
   description: string;
-  tags: string;
+  tags?: string;
   date: string;
 }
 
 export function BlogCard(props: BlogCardProps) {
-  const { title, slug, description, tags, date } = props;
+  const { id, img, title, slug, description, tags, date } = props;
   const router = useRouter();
   return (
     <Card {...props}>
-      <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
+      {/* {img ? <img src={img} alt="" /> : null} */}
+      <CardHeader className="grid grid-cols-1 items-start gap-4 space-y-0">
         <div className="space-y-1">
-          <CardTitle onClick={() => router.push(`/blog/${slug}`)}>
+          <CardTitle
+            onClick={() => router.push(`/blog/${id}`)}
+            className="mb-3"
+          >
             {title}
           </CardTitle>
           <CardDescription>{description}</CardDescription>

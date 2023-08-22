@@ -97,7 +97,10 @@ export function Paragraph({
   className?: string;
 }) {
   return (
-    <p className="leading-7 mb-4 [&:not(:first-child)]:mt-6" {...props}>
+    <p
+      className={`leading-7 mb-4 [&:not(:first-child)]:mt-6 ${className}`}
+      {...props}
+    >
       {children}
     </p>
   );
