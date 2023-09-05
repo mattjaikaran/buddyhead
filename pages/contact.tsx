@@ -101,7 +101,9 @@ const Contact: NextPage = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit">Send Message</Button>
+            <Button type="submit" disabled>
+              Send Message
+            </Button>
           </form>
         </Form>
       </div>

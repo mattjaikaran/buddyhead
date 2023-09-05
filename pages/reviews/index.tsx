@@ -3,7 +3,7 @@ import { HeadingH1 } from '@/components/typography';
 import { formattedDate, formattedTime } from '@/lib/utils';
 import axios from 'axios';
 import { NextPage } from 'next';
-import { useState, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import { MainLayout } from '../layout';
 
 const URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
@@ -11,7 +11,7 @@ const STRAPI_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const ReviewsAll: NextPage = () => {
   const [blogs, setBlogs] = useState([]);
-  useMemo(() => {
+  useEffect(() => {
     const renderBlogs = async () => {
       try {
         const response = await axios.get(

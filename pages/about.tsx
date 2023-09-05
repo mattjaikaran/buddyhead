@@ -8,6 +8,7 @@ const About: NextPage = () => {
   return (
     <MainLayout>
       {/* TODO: add head */}
+      {/* TODO: refactor About into Dynamic Zones */}
       <div className="container">
         <HeadingH1 className="mt-8 mb-8">About</HeadingH1>
         <p>

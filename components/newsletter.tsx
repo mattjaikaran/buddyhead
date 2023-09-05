@@ -24,7 +24,7 @@ const Newsletter = () => {
     }
   };
   return (
-    <div className="p-16 md:px-64 md:py-32 text-center">
+    <div className="p-16 md:px-64 md:py-16 text-center">
       <HeadingH3>Newsletter</HeadingH3>
       <Paragraph>Sign up for updates</Paragraph>
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -37,15 +37,15 @@ const Newsletter = () => {
           />
         </div>
         <Button variant="outline" type="submit">
-          Button
+          Submit
         </Button>
       </form>
       {alertMessage ? (
-        <Alert>
+        <Alert variant="success">
           <AlertTitle>{alertMessage}</AlertTitle>
-          <AlertDescription>
+          {/* <AlertDescription>
             You can add components and dependencies to your app using the cli.
-          </AlertDescription>
+          </AlertDescription> */}
         </Alert>
       ) : null}
     </div>

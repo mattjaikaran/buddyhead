@@ -31,6 +31,6 @@ export const siteConfig = {
   ],
   links: {
     twitter: 'https://twitter.com/buddyhead',
-    instagram: 'https://instagram.com/buddyhead',
+    instagram: 'https://instagram.com/buddyhead_',
   },
 };
