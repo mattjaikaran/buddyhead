@@ -5,7 +5,8 @@ import path from "path";
 export default ({ env }: { env: any }) => {
   const client = env("DATABASE_CLIENT", "sqlite");
 
-  const connections = {
+  // @ts-ignore
+  const connections: any = {
     mysql: {
       connection: {
         connectionString: env("DATABASE_URL"),
@@ -99,6 +100,7 @@ export default ({ env }: { env: any }) => {
   return {
     connection: {
       client,
+      // @ts-ignore
       ...connections[client],
       acquireConnectionTimeout: env.int("DATABASE_CONNECTION_TIMEOUT", 60000),
     },
