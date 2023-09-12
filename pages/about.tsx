@@ -2,7 +2,10 @@
 import { NextPage } from 'next';
 import { MainLayout } from './layout';
 import { HeadingH1 } from '@/components/typography';
-import skull from '@/assets/images/skull.png';
+// import skull from '@/assets/images/skull.png';
+
+const skull =
+  'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/skull_dc8f006dfe.PNG';
 
 const About: NextPage = () => {
   return (
@@ -30,7 +33,7 @@ const About: NextPage = () => {
           consequuntur voluptates tempore. Cum, possimus? Voluptas.
         </p>
         <div className="flex justify-center mt-16">
-          <img src={skull.src} width={150} alt="skull logo" />
+          <img src={skull} width={150} alt="skull logo" />
         </div>
       </div>
     </MainLayout>

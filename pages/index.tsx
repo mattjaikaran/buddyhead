@@ -4,11 +4,17 @@ import Head from 'next/head';
 
 import { MainLayout } from './layout';
 import { Button } from '@/components/ui/button';
-import sunset from '@/assets/images/sunset.jpg';
-import palms from '@/assets/images/palms.jpg';
 import { HeadingH1, HeadingH3, Paragraph } from '@/components/typography';
 import Newsletter from '@/components/newsletter';
-import skull from '@/assets/images/skull.png';
+// import sunset from '@/assets/images/sunset.jpg';
+// import palms from '@/assets/images/palms.jpg';
+// import skull from '@/assets/images/skull.png';
+const skull =
+  'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/skull_dc8f006dfe.PNG';
+const sunset =
+  'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/sunset_19e77849a4.JPG';
+const palms =
+  'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/palms_fa11353187.JPG';
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +24,7 @@ const Home: NextPage = () => {
       <div className="container-fluid xl:container">
         <div
           style={{
-            backgroundImage: `url(${sunset.src})`,
+            backgroundImage: `url(${sunset})`,
             backgroundSize: 'cover',
             backgroundPosition: 'top',
           }}
@@ -64,7 +70,7 @@ const Home: NextPage = () => {
           <HeadingH3>what up</HeadingH3>
           <Button className="bg-foreground text-background">Click Here</Button>
         </div>
-        <img src={palms.src} alt="img" />
+        <img src={palms} alt="img" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
           <div className="bg-background text-foreground p-24 text-center">
             <HeadingH3>what up</HeadingH3>
@@ -80,7 +86,7 @@ const Home: NextPage = () => {
 
         <Newsletter />
         <div className="flex justify-center my-4">
-          <img src={skull.src} width={150} alt="skull logo" />
+          <img src={skull} width={150} alt="skull logo" />
         </div>
       </div>
     </MainLayout>
