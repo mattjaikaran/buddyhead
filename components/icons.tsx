@@ -24,10 +24,8 @@ export const Icons = {
   moon: Moon,
   twitter: Twitter,
   instagram: Instagram,
-  logo: (props: LucideProps) => (
-    <img src={logo} width={100} alt="logo" {...props} />
-  ),
-  logoPink: (props: LucideProps) => (
+  logo: (props: any) => <img src={logo} width={100} alt="logo" {...props} />,
+  logoPink: (props: any) => (
     <img src={logoPink} width={100} alt="logo" {...props} />
   ),
 };
