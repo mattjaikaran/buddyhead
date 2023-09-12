@@ -41,7 +41,7 @@ const Newsletter = () => {
         </Button>
       </form>
       {alertMessage ? (
-        <Alert variant="success">
+        <Alert variant="default">
           <AlertTitle>{alertMessage}</AlertTitle>
           {/* <AlertDescription>
             You can add components and dependencies to your app using the cli.
