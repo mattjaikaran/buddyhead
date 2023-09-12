@@ -4,7 +4,7 @@ import { formattedDate, formattedTime } from '@/lib/utils';
 import axios from 'axios';
 import { NextPage } from 'next';
 import { useState, useEffect } from 'react';
-import { MainLayout } from '../layout';
+import { MainLayout } from '@/layouts/layout';
 
 const URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 const STRAPI_URL = process.env.NEXT_PUBLIC_API_URL;

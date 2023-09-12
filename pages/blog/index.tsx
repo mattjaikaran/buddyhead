@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import { MainLayout } from '../layout';
+import { MainLayout } from '@/layouts/layout';
 import { BlogCard } from '@/components/cards/blog-card';
 import { HeadingH1 } from '@/components/typography';
 import { useEffect, useState } from 'react';

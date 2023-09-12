@@ -2,7 +2,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import { MainLayout } from './layout';
+import { MainLayout } from '@/layouts/layout';
 import { Button } from '@/components/ui/button';
 import { HeadingH1, HeadingH3, Paragraph } from '@/components/typography';
 import Newsletter from '@/components/newsletter';

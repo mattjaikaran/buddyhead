@@ -3,7 +3,7 @@ import { NextPage } from 'next';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
-import { MainLayout } from '../../layout';
+import { MainLayout } from '@/layouts/layout';
 import { HeadingH2 } from '@/components/typography';
 import ReactMarkdown from 'react-markdown';
 
