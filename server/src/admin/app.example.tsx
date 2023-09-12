@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   config: {
     locales: [
@@ -29,7 +30,8 @@ export default {
       // 'zh',
     ],
   },
-  bootstrap(app) {
+  // @ts-ignore
+  bootstrap(app: any) {
     console.log(app);
   },
 };
