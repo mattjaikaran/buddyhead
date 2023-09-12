@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/no-anonymous-default-export
+/* eslint-disable import/no-anonymous-default-export */
 export default ({ env }: { env: any }) => ({
   host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337),

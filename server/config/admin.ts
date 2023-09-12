@@ -1,4 +1,5 @@
-// eslint-disable-next-line import/no-anonymous-default-export
+/* eslint-disable import/no-anonymous-default-export */
+// @ts-ignore
 export default ({ env }: { env: any }) => ({
   auth: {
     secret: env("ADMIN_JWT_SECRET"),
