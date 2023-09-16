@@ -6,9 +6,9 @@ import { MainLayout } from '@/layouts/layout';
 import { Button } from '@/components/ui/button';
 import { HeadingH1, HeadingH3, Paragraph } from '@/components/typography';
 import Newsletter from '@/components/newsletter';
-// import sunset from '@/assets/images/sunset.jpg';
-// import palms from '@/assets/images/palms.jpg';
-// import skull from '@/assets/images/skull.png';
+// import sunsetLocal from '@/assets/images/sunset.jpg';
+// import palmsLocal from '@/assets/images/palms.jpg';
+// import skullLocal from '@/assets/images/skull.png';
 const skull =
   'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/skull_dc8f006dfe.PNG';
 const sunset =
