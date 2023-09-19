@@ -24,7 +24,6 @@ const Newsletter = () => {
         >
           <Input
             id="EMAIL"
-            autoFocus
             className="mb-4"
             type="email"
             placeholder="test@example.com"

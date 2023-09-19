@@ -21,7 +21,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'buddyhead-app-xvgeb.ondigitalocean.app',
         port: '1337',
-        pathname: '/**',
+        pathname: '/uploads/**',
       },
       {
         protocol: 'https',

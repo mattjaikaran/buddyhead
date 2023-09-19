@@ -8,14 +8,10 @@ import {
   // @ts-ignore
   type Icon as LucideIcon,
 } from 'lucide-react';
-// import logo from '@/assets/images/logo-white.png';
-// import logoPink from '@/assets/images/logo-pink.png';
 
-const logo =
-  'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/logo_white_29f0b0a051.PNG';
-const logoPink =
-  'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/logo_pink_ae3ebca285.PNG';
-// const logo = 'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/';
+const url = 'https://buddyhead-app-xvgeb.ondigitalocean.app';
+const logo = `${url}/uploads/logo_white_926f3e45c6.PNG`;
+const logoPink = `${url}/uploads/logo_pink_6604f4c54b.PNG`;
 
 export type Icon = LucideIcon;
 
@@ -26,6 +22,6 @@ export const Icons = {
   instagram: Instagram,
   logo: (props: any) => <img src={logo} width={100} alt="logo" {...props} />,
   logoPink: (props: any) => (
-    <img src={logoPink} width={100} alt="logo" {...props} />
+    <img src={logoPink} width={100} alt="logo pink" {...props} />
   ),
 };

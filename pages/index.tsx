@@ -6,16 +6,12 @@ import { MainLayout } from '@/layouts/layout';
 import { Button } from '@/components/ui/button';
 import { HeadingH1, HeadingH3, Paragraph } from '@/components/typography';
 import Newsletter from '@/components/newsletter';
-// import sunsetLocal from '@/assets/images/sunset.jpg';
-// import palmsLocal from '@/assets/images/palms.jpg';
-// import skullLocal from '@/assets/images/skull.png';
-const skull =
-  'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/skull_dc8f006dfe.PNG';
-const sunset =
-  'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/sunset_19e77849a4.JPG';
-const palms =
-  'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/palms_fa11353187.JPG';
 
+const API_URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
+const skull = `https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/skull_828339ea73.PNG`;
+const sunset = `https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/sunset_b52ecbc189.JPG`;
+const palms = `https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/palms_ed22ac20e4.JPG`;
+('');
 const Home: NextPage = () => {
   return (
     <MainLayout>
@@ -70,7 +66,6 @@ const Home: NextPage = () => {
           <HeadingH3>what up</HeadingH3>
           <Button className="bg-foreground text-background">Click Here</Button>
         </div>
-        <img src={palms} alt="img" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
           <div className="bg-background text-foreground p-24 text-center">
             <HeadingH3>what up</HeadingH3>
@@ -83,6 +78,8 @@ const Home: NextPage = () => {
             <Button variant="outline">Button</Button>
           </div>
         </div>
+
+        <img src={palms} alt="img" />
 
         <Newsletter />
         <div className="flex justify-center my-4">

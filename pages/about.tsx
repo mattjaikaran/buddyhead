@@ -2,10 +2,9 @@
 import { NextPage } from 'next';
 import { MainLayout } from '@/layouts/layout';
 import { HeadingH1 } from '@/components/typography';
-// import skull from '@/assets/images/skull.png';
 
-const skull =
-  'https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/skull_dc8f006dfe.PNG';
+const url = 'https://buddyhead-app-xvgeb.ondigitalocean.app';
+const skull = `${url}/uploads/skull_828339ea73.PNG`;
 
 const About: NextPage = () => {
   return (
