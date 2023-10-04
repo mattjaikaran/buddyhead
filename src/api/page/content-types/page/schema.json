@@ -27,7 +27,9 @@
     "blocks": {
       "type": "dynamiczone",
       "components": [
-        "test.test-component"
+        "shared.button",
+        "shared.header",
+        "shared.link"
       ]
     },
     "publish_at": {
