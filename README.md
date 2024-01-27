@@ -1,5 +1,13 @@
 # Buddyhead Server
 
+Back end admin panel/cms to manage content.
+
+### Features
+
+- Dynamic Zones/Page Builder
+- Components located in `@/src/components`
+  - Buttons, Alert, Cards located in `@/src/components/shared`
+
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
 ### `develop`
@@ -7,8 +15,6 @@ Strapi comes with a full featured [Command Line Interface](https://docs.strapi.i
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
 
 ```
-npm run develop
-# or
 yarn develop
 ```
 
