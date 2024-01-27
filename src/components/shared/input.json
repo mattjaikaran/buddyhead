@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_inputs",
+  "info": {
+    "name": "input",
+    "displayName": "Input",
+    "icon": "keyboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": ["text", "password", "email", "number", "tel", "url", "search"],
+      "default": "text",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    "placeholder": {
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    "className": {
+      "type": "string",
+      "default": "",
+      "required": true
+    }
+  }
+}

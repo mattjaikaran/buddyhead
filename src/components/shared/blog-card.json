@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_shared_blog_cards",
+  "info": {
+    "name": "blog-card",
+    "displayName": "Blog Card",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "id": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "allowedTypes": [".jpg", ".png"]
+    },
+    "slug": {
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "default": "",
+      "required": true
+    },
+    "tags": {
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    "date": {
+      "type": "datetime",
+      "default": "",
+      "required": true
+    }
+  }
+}

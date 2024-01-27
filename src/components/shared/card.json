@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_cards",
+  "info": {
+    "name": "card",
+    "displayName": "Card",
+    "icon": "credit-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    "footer": {
+      "type": "string",
+      "default": "",
+      "required": true
+    }
+  }
+}
