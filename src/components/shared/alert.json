@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_alerts",
+  "info": {
+    "name": "alert",
+    "displayName": "Alert",
+    "icon": "bell",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "enum": ["default", "destructive"],
+      "default": "default",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "default": "",
+      "required": true
+    }
+  }
+}

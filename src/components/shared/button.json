@@ -8,10 +8,23 @@
   },
   "options": {},
   "attributes": {
-    "theme": {
+    "variant": {
       "type": "enumeration",
-      "enum": ["primary", "secondary", "muted"],
-      "default": "primary",
+      "enum": [
+        "default",
+        "destructive",
+        "outline",
+        "secondary",
+        "ghost",
+        "link"
+      ],
+      "default": "default",
+      "required": true
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": ["default", "sm", "lg", "icon"],
+      "default": "default",
       "required": true
     },
     "link": {
